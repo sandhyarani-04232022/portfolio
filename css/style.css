@@ -1,8 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navigation,
 .about-sec,
 .hero-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .navigation a,
@@ -310,4 +314,81 @@ ul {
     flex-wrap: wrap;
     gap: 12px;
     margin: 20px 0 20px 0;
+}
+
+/* Backto top button */
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#backToTop:hover {
+    background: #0b5ed7;
+    transform: translateY(-3px);
+}
+
+/* transitions */
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .2);
+}
+
+.skill-badges img {
+    transition: transform .3s ease;
+}
+
+.skill-badges:hover img {
+    transform: scale(1.15);
+}
+
+.navbar-nav li a {
+    transition: color .3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: #0d6efd;
+}
+
+.profile-img {
+    transition: transform .4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.social-icons a {
+    transition: transform .3s ease;
+}
+
+.social-icons a:hover {
+    transform: rotate(10deg) scale(1.2);
 }

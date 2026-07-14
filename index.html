@@ -2,9 +2,14 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhya Rani | WordPress Developer</title>
+    <link rel="icon" type="image/webp" href="images/favicon.webp">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
@@ -45,25 +50,20 @@
                 </div>
             </nav>
         </div>
-        <div class="hero-section" id="hero-sec">
-            <img src="images/sandhya.jpeg" alt="Profile_Pic">
+        <div class="hero-section" id="hero-sec" data-aos="fade-up">
+            <img class="profile-img " src="images/sandhya.jpeg" alt="Profile_Pic">
             <h1>WordPress Front-end Developer</h1>
             <a href="resume/Senior_Software_Engineer_L2.docx">Download Resume</a>
             <a href="tel:9059691592">Contact Me : 9059691592</a>
         </div>
-        <div class="about-sec" id="about">
+        <div class="about-sec" id="about" data-aos="fade-right">
             <h2>About Me</h2>
-            <p>In overall 7 years of IT experience, results-driven WordPress Front-End Developer with over 5 years of
-                experience
-                designing, developing, and maintaining responsive, SEO-friendly, and high-performance WordPress
-                websites. Proficient in
-                HTML5, CSS3, JavaScript (ES6), Bootstrap, jQuery, PHP, WordPress, Elementor, MySQL, Git, and cPanel.
-                Experienced in
-                custom theme customization, plugin customization, API integration, website performance optimization,
-                responsive design,
-                cross-browser compatibility, and website migration. Passionate about building scalable, user-friendly
-                websites and
-                delivering high-quality digital experiences.</p>
+            <p>In overall 7 years of IT experience, WordPress Developer with 5 years of experience building custom
+                WordPress websites,
+                developing responsive user interfaces, customizing themes and plugins, integrating REST APIs, and
+                optimizing website
+                performance. Experienced in Elementor, WooCommerce, HTML5, CSS3, JavaScript, PHP, MySQL, Git, and SEO.
+            </p>
 
             <strong>Experienced in</strong>
             <ul>
@@ -74,7 +74,7 @@
                 <li>SEO Optimization</li>
             </ul>
         </div>
-        <div class="skills-sec" id="skills">
+        <div class="skills-sec" id="skills" data-aos="zoom-in">
             <h2>Technical Skills</h2>
             <div class="skill-badges">
                 <span>HTML5</span>
@@ -92,7 +92,7 @@
                 <span>GitHub</span>
             </div>
         </div>
-        <div class="projects-sec" id="projects">
+        <div class="projects-sec" id="projects" data-aos="flip-left">
             <h2>Projects</h2>
 
             <div class="project-grid">
@@ -193,7 +193,7 @@
                 </div>
             </div>
         </div>
-        <div class="experience" id="experience">
+        <div class="experience" id="experience" data-aos="fade-up">
             <h2>Work Experience</h2>
 
             <div class="timeline">
@@ -304,46 +304,46 @@
 
                 <div class="contact-info">
 
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
+                    <div class="contact-item social-icons">
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
                         <div>
                             <h4>Email</h4>
-                            <a href="mailto:yourname@gmail.com">yourname@gmail.com</a>
+                            <a href="mailto:yourname@gmail.com">sandhyaranijangam@gmail.com</a>
                         </div>
                     </div>
 
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
+                    <div class="contact-item social-icons">
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
                         <div>
                             <h4>Phone</h4>
                             <a href="tel:+919059691592">+91 90596 91592</a>
                         </div>
                     </div>
 
-                    <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <div class="contact-item social-icons">
+                        <a href=""><i class="fa-solid fa-location-dot"></i></a>
                         <div>
                             <h4>Location</h4>
                             <p>Hyderabad, Telangana</p>
                         </div>
                     </div>
 
-                    <div class="contact-item">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <div class="contact-item social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
                         <div>
                             <h4>LinkedIn</h4>
-                            <a href="https://linkedin.com/in/your-profile" target="_blank">
-                                linkedin.com/in/your-profile
+                            <a href="https://www.linkedin.com/in/sandhyaranijangam/" target="_blank">
+                                https://www.linkedin.com/in/sandhyaranijangam/
                             </a>
                         </div>
                     </div>
 
-                    <div class="contact-item">
-                        <i class="fa-brands fa-github"></i>
+                    <div class="contact-item social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
                         <div>
                             <h4>GitHub</h4>
-                            <a href="https://github.com/yourusername" target="_blank">
-                                github.com/yourusername
+                            <a href="https://github.com/sandhyarani-04232022/" target="_blank">
+                                https://github.com/sandhyarani-04232022/
                             </a>
                         </div>
                     </div>
@@ -368,9 +368,20 @@
 
             </div>
         </div>
+        <button id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
 
 </html>
